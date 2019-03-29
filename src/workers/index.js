@@ -8,7 +8,8 @@ self.addEventListener('install', function(event) {
         console.log(navigator);
         console.log(cache);
         console.log('Opened cache');
-        return cache.addAll(urlsToCache);
+        console.log(cache.keys())
+        return 
       })
   );
 });
