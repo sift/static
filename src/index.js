@@ -2,7 +2,7 @@ function main() {
 
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
-          navigator.serviceWorker.register('/static/src/workers/user.js').then(function(registration) {
+          navigator.serviceWorker.register('/static/src/workers/index.js').then(function(registration) {
             // Registration was successful
             console.log('ServiceWorker registration successful with scope: ', registration.scope);
           }, function(err) {
