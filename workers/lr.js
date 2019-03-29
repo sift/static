@@ -1,6 +1,5 @@
-console.log('sw.js')
-
 var CACHE_NAME = 'my-site-cache-v1';
+
 var urlsToCache = [
   '/',
   '/styles/main.css',
