@@ -1,8 +1,8 @@
 function main() {
+
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
-          navigator.serviceWorker.register('/static/src/workers/lr.js').then(function(registration) {
-            debugger;
+          navigator.serviceWorker.register('/static/src/workers/user.js').then(function(registration) {
             // Registration was successful
             console.log('ServiceWorker registration successful with scope: ', registration.scope);
           }, function(err) {
