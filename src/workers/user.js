@@ -1,10 +1,4 @@
-var CACHE_NAME = 'my-site-cache-v1';
-
-var urlsToCache = [
-  '/',
-  '/styles/main.css',
-  '/script/main.js'
-];
+var CACHE_NAME = 'tanium.ui.user';
 
 self.addEventListener('install', function(event) {
   // Perform install steps
