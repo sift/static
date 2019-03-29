@@ -1,5 +1,7 @@
 var CACHE_NAME = 'tanium.ui.user';
-
+function keys(res){
+  console.log(res);
+}
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
@@ -8,8 +10,8 @@ self.addEventListener('install', function(event) {
         console.log(navigator);
         console.log(cache);
         console.log('Opened cache');
-        console.log(cache.keys())
-        return 
+        console.log(cache.keys().then(keys))
+        return
       })
   );
 });
