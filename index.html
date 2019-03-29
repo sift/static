@@ -1,1 +1,16 @@
-<script src="/static/src/index.js"></script>
+<script>
+    function main() {
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/static/src/workers/index.js').then(function(registration) {
+                    debugger
+                    console.log('ServiceWorker registration successful with scope: ', registration);
+                }, function(err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    }
+
+    main();
+</script>
